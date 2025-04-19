@@ -26,7 +26,7 @@
   <Config Name="SUCCESS_LINE2" Target="SUCCESS_LINE2" Default="Your Switch Shop" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Your Switch Shop</Config>
   <Config Name="port" Target="4223" Default="4223" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4223</Config>
   <Config Name="PUBLIC_URL" Target="PUBLIC_URL" Default="http://localhost:4223" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://10.4.20.204:4223</Config>
-  <Config Name="OUTPUT_DIR" Target="/app/data/output" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="OUTPUT_DIR" Target="/app/data/output" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="GAMESAVES_DIR" Target="/app/data/gamesaves" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="THEMES_DIR" Target="/app/data/themes" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="SWITCH_DIR" Target="/app/data/switch" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>

@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/MasterPhooey/Tater-Discord-WebUI</Support>
   <Project>https://github.com/MasterPhooey/Tater-Discord-WebUI</Project>
-  <Overview>A Ollama Discord Chat Bot With Tools</Overview>
+  <Overview></Overview>
   <Category>AI: Other:</Category>
   <WebUI>http://[IP]:[PORT:8501]/</WebUI>
   <TemplateURL/>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1743976557</DateInstalled>
+  <DateInstalled></DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

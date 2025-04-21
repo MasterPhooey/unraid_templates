@@ -2,25 +2,17 @@
 <Container version="2">
   <Name>MicroWakeWord_Trainer-Nvidia</Name>
   <Repository>masterphooey/microwakeword-trainer:latest</Repository>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/masterphooey/microwakeword-trainer</Registry>
   <Network>bridge</Network>
-  <MyIP/>
-  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/MasterPhooey/MicroWakeWord-Trainer-Docker</Support>
   <Project>https://github.com/MasterPhooey/MicroWakeWord-Trainer-Docker</Project>
   <Overview>MicroWakerWord Trainer</Overview>
   <Category>AI: Other:</Category>
   <WebUI>http://[IP]:[PORT:8888]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/refs/heads/main/microwakeword_trainer.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/MasterPhooey/MicroWakeWord-Trainer-Docker/refs/heads/main/mmw.png</Icon>
   <ExtraParams>--gpus all</ExtraParams>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled></DateInstalled>
-  <DonateText/>
-  <DonateLink/>
-  <Requires/>
   <Config Name="Host Path 1" Target="/data" Default="/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/mww/</Config>
   <Config Name="Host Port 1" Target="8888" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
   <TailscaleStateDir/>

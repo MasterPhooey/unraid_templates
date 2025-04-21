@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/MasterPhooey/Tater-Discord-WebUI</Support>
   <Project>https://github.com/MasterPhooey/Tater-Discord-WebUI</Project>
-  <Overview></Overview>
+  <Overview>A Ollama Discord Chat Bot With Tools</Overview>
   <Category>AI: Other:</Category>
   <WebUI>http://[IP]:[PORT:8501]/</WebUI>
   <TemplateURL/>

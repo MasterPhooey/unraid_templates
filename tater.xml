@@ -2,25 +2,16 @@
 <Container version="2">
   <Name>Tater</Name>
   <Repository>masterphooey/tater-webui</Repository>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/masterphooey/tater</Registry>
   <Network>bridge</Network>
-  <MyIP/>
-  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/MasterPhooey/Tater-Discord-WebUI</Support>
   <Project>https://github.com/MasterPhooey/Tater-Discord-WebUI</Project>
   <Overview>A Ollama Discord Chat Bot With Tools</Overview>
   <Category>AI: Other:</Category>
   <WebUI>http://[IP]:[PORT:8501]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/refs/heads/main/tater.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/MasterPhooey/Tater-Discord-WebUI/refs/heads/main/images/tater.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled></DateInstalled>
-  <DonateText/>
-  <DonateLink/>
-  <Requires/>
   <Config Name="OLLAMA_HOST" Target="OLLAMA_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
   <Config Name="OLLAMA_PORT" Target="OLLAMA_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">11434</Config>
   <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
@@ -28,5 +19,4 @@
   <Config Name="CONTEXT_LENGTH" Target="CONTEXT_LENGTH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5000</Config>
   <Config Name="8501" Target="8501" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8501</Config>
   <Config Name="OLLAMA_MODEL" Target="OLLAMA_MODEL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">gemma3:27b</Config>
-  <TailscaleStateDir/>
 </Container>

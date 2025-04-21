@@ -7,7 +7,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/MasterPhooey/MicroWakeWord-Trainer-Docker</Support>
   <Project>https://github.com/MasterPhooey/MicroWakeWord-Trainer-Docker</Project>
-  <Overview>MicroWakerWord Trainer</Overview>
+  <Overview>A MicroWakerWord Trainer</Overview>
   <Category>AI: Other:</Category>
   <WebUI>http://[IP]:[PORT:8888]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/refs/heads/main/microwakeword_trainer.xml</TemplateURL>

@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Tater</Name>
   <Repository>masterphooey/tater-webui</Repository>
-  <Registry>https://hub.docker.com/r/masterphooey/tater</Registry>
+  <Registry>https://hub.docker.com/r/masterphooey/tater-webui</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://github.com/MasterPhooey/Tater-Discord-WebUI</Support>

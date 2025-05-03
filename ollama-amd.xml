@@ -18,4 +18,5 @@
   <Config Name="Config" Target="/root/.ollama" Default="/mnt/user/appdata/ollama" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ollama</Config>
   <Config Name="Web Interface" Target="11434" Default="11434" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11434</Config>
   <Config Name="OLLAMA_ORIGINS" Target="OLLAMA_ORIGINS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">*</Config>
+  <Config Name="OLLAMA_KEEP_ALIVE" Target="OLLAMA_KEEP_ALIVE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">-1</Config>
 </Container>

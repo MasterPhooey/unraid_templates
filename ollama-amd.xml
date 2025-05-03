@@ -19,4 +19,5 @@
   <Config Name="Web Interface" Target="11434" Default="11434" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11434</Config>
   <Config Name="OLLAMA_ORIGINS" Target="OLLAMA_ORIGINS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">*</Config>
   <Config Name="OLLAMA_KEEP_ALIVE" Target="OLLAMA_KEEP_ALIVE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">-1</Config>
+  <Config Name="OLLAMA_CONTEXT_LENGTH" Target="OLLAMA_CONTEXT_LENGTH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5000</Config>
 </Container>

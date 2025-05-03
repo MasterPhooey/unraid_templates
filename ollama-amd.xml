@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Ollama-AMD</Name>
+  <Repository>ollama/ollama:rocm</Repository>
+  <Registry>https://hub.docker.com/r/ollama/ollama/</Registry>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/ollama/ollama/</Support>
+  <Project>https://ollama.com</Project>
+  <Overview>Ollama for use with AMD Graphic Cards</Overview>
+  <Category>AI: Other:</Category>
+  <WebUI>http://[IP]:[PORT:11434]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/refs/heads/main/ollama-amd.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/MasterPhooey/unraid_icons/refs/heads/main/ollamamd.png</Icon>
+  <ExtraParams>--device /dev/kfd --device /dev/dri</ExtraParams>
+  <Requires>Radeon-TOP Installed</Requires>
+  <Config Name="Config" Target="/root/.ollama" Default="/mnt/user/appdata/ollama" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ollama</Config>
+  <Config Name="Web Interface" Target="11434" Default="11434" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11434</Config>
+  <Config Name="OLLAMA_ORIGINS" Target="OLLAMA_ORIGINS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">*</Config>
+</Container>

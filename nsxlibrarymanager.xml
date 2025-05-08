@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>NsxLibraryManager</Name>
-  <Repository>masterphooey/nsxlibrarymanager:latest</Repository>
-  <Registry>https://hub.docker.com/r/masterphooey/nsxlibrarymanager</Registry>
+  <Repository>ghcr.io/ivaano/nsxlibrarymanager:latest</Repository>
+  <Registry>https://github.com/ivaano/NsxLibraryManager/pkgs/container/nsxlibrarymanager</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -11,13 +11,15 @@
   <Overview>Nsx Library Manager helps to manage and visualize a nintendo switch library, organizing the files and creating a database with all the information.</Overview>
   <Category>Backup: Cloud: Other:</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/refs/heads/main/nsxlibrarymanager.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/master/nsxlibrarymanager.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/MasterPhooey/unraid_icons/refs/heads/main/nsxlibrarymanager.png</Icon>
   <Requires>Add /app/library to your library path in NLM settings</Requires>
-  <Config Name="Your Switch library " Target="/app/library/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Your Switch library" Target="/app/library/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/remotes/10.4.20.209_RetroNas/roms/nintendo/switch/nsp/</Config>
   <Config Name="Config" Target="/app/config/" Default="" Mode="rw" Description="Used to store app configuration" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/config/</Config>
   <Config Name="Backup" Target="/app/backup/" Default="" Mode="rw" Description="Used to move titles when removing duplicates" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/backup/</Config>
   <Config Name="Renamer" Target="/app/renamer/in/" Default="" Mode="rw" Description="Used to put the files you want to rename that are not in the library" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/IN/</Config>
   <Config Name="Data" Target="/app/data/" Default="" Mode="rw" Description="Used to store app databases" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/data/</Config>
   <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4224</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="GUID" Target="GUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
 </Container>

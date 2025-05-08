@@ -17,7 +17,8 @@
   <Config Name="Your Switch library" Target="/app/library/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Config" Target="/app/config/" Default="" Mode="rw" Description="Used to store app configuration" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/config/</Config>
   <Config Name="Backup" Target="/app/backup/" Default="" Mode="rw" Description="Used to move titles when removing duplicates" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/backup/</Config>
-  <Config Name="Renamer" Target="/app/renamer/in/" Default="" Mode="rw" Description="Used to put the files you want to rename that are not in the library" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/IN/</Config>
+  <Config Name="Renamer In" Target="/app/renamer/in/" Default="" Mode="rw" Description="Used to put the files you want to rename that are not in the library" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/in/</Config>
+  <Config Name="Renamer Out" Target="/app/renamer/out/" Default="" Mode="rw" Description="Used to put the files you want to rename that are not in the library" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/out/</Config>
   <Config Name="Data" Target="/app/data/" Default="" Mode="rw" Description="Used to store app databases" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/data/</Config>
   <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4224</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>

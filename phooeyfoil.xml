@@ -11,12 +11,13 @@
   <Category>Backup: Cloud: Other:</Category>
   <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/refs/heads/main/phooeyfoil.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/MasterPhooey/PhooeyFoil/refs/heads/main/images/phooeyface.png</Icon>
-  <Config Name="AUTH_CREDENTIALS" Target="AUTH_CREDENTIALS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin:changeme</Config>
-  <Config Name="SUCCESS_LINE1" Target="SUCCESS_LINE1" Default="Welcome to PhooeyFoil" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Welcome to PhooeyFoil</Config>
-  <Config Name="SUCCESS_LINE2" Target="SUCCESS_LINE2" Default="Your Switch Shop" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Your Switch Shop</Config>
-  <Config Name="port" Target="4223" Default="4223" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4223</Config>
-  <Config Name="PUBLIC_URL" Target="PUBLIC_URL" Default="http://localhost:4223" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://10.4.20.204:4223</Config>
-  <Config Name="OUTPUT_DIR" Target="/app/data/output" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="AUTH_CREDENTIALS" Target="AUTH_CREDENTIALS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">admin:changeme</Config>
+  <Config Name="UNENCRYPTED_ENDPOINT" Target="UNENCRYPTED_ENDPOINT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">no</Config>
+  <Config Name="SUCCESS_LINE1" Target="SUCCESS_LINE1" Default="Welcome to PhooeyFoil" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Welcome to PhooeyFoil</Config>
+  <Config Name="SUCCESS_LINE2" Target="SUCCESS_LINE2" Default="Your Switch Shop" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Your Switch Shop</Config>
+  <Config Name="port" Target="4223" Default="4223" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">4223</Config>
+  <Config Name="PUBLIC_URL" Target="PUBLIC_URL" Default="http://localhost:4223" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://10.4.20.204:4223</Config>
+  <Config Name="OUTPUT_DIR" Target="/app/data/output" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/phooeyfoil/</Config>
   <Config Name="GAMESAVES_DIR" Target="/app/data/gamesaves" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="THEMES_DIR" Target="/app/data/themes" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="SWITCH_DIR" Target="/app/data/switch" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>

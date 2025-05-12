@@ -20,6 +20,7 @@
   <Config Name="Renamer In" Target="/app/renamer/in/" Default="" Mode="rw" Description="Used to put the files you want to rename that are not in the library" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/in/</Config>
   <Config Name="Renamer Out" Target="/app/renamer/out/" Default="" Mode="rw" Description="Used to put the files you want to rename that are not in the library" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/out/</Config>
   <Config Name="Data" Target="/app/data/" Default="" Mode="rw" Description="Used to store app databases" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/data/</Config>
+  <Config Name="Icon" Target="/app/wwwroot/images/icon/" Default="" Mode="rw" Description="Used to put icon data extracted from the titles will be saved" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nsxlibrarymanager/icon/</Config>
   <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4224</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="GUID" Target="GUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>

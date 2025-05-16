@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>NsxLibraryManager</Name>
-  <Repository>masterphooey/nsxlibrarymanager:latest</Repository>
+  <Repository>ghcr.io/ivaano/nsxlibrarymanager:latest</Repository>
   <Registry>https://github.com/ivaano/NsxLibraryManager/pkgs/container/nsxlibrarymanager</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>

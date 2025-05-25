@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FluxGym</Name>
+  <Repository>masterphooey/fluxgym</Repository>
+  <Registry>https://hub.docker.com/repository/docker/masterphooey/fluxgym/general</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/cocktailpeanut/fluxgym/issues</Support>
+  <Project>https://github.com/cocktailpeanut/fluxgym</Project>
+  <Overview>Dead simple web UI for training FLUX LoRA with LOW VRAM (12GB/16GB/20GB) support.</Overview>
+  <Category>AI: Other:</Category>
+  <WebUI>http://[IP]:[PORT:7860]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/refs/heads/main/fluxgym.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/MasterPhooey/unraid_icons/refs/heads/main/fluxgym.png</Icon>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <Config Name="Port" Target="7860" Default="7860" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7860</Config>
+  <Config Name="output" Target="/app/fluxgym/outputs" Default="/mnt/user/appdata/fluxgym" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fluxgym/outpouts</Config>
+  <Config Name="models" Target="/app/fluxgym/models" Default="/mnt/user/appdata/fluxgym/models" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fluxgym/models</Config>
+  <Config Name="datasets" Target="/app/fluxgym/datasets" Default="/mnt/user/appdata/fluxgym/datasets" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fluxgym/datasets</Config>
+  <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Get this value from settings/User Utilities/nvidia driver" Type="Variable" Display="always" Required="true" Mask="false">GPU-</Config>
+  <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+</Container>

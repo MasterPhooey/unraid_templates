@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Piper-Nvidia</Name>
+  <Repository>ghcr.io/linuxserver/piper:gpu</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/piper</Registry>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-piper/issues/new/choose</Support>
+  <Project>https://github.com/rhasspy/piper/</Project>
+  <Overview>Piper(https://github.com/rhasspy/piper/) is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper. This container is linuxserver image with gpu support.</Overview>
+  <Category>AI: Other:</Category>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/piper.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/MasterPhooey/unraid_icons/refs/heads/main/piper-nvidia.png</Icon>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <Config Name="WebUI" Target="10200" Default="10200" Mode="tcp" Description="Wyoming connection port." Type="Port" Display="always" Required="true" Mask="false">10200</Config>
+  <Config Name="PIPER_VOICE" Target="PIPER_VOICE" Default="en_US-lessac-medium" Mode="{3}" Description="The Piper voice(https://huggingface.co/rhasspy/piper-voices/tree/main) to use, in the format `language-name-quality`" Type="Variable" Display="always" Required="true" Mask="false">en_US-ryan-high</Config>
+  <Config Name="PIPER_LENGTH" Target="PIPER_LENGTH" Default="1.0" Mode="{3}" Description="Voice speaking rate, 1.0 is default with  1.0 being faster and  1.0 being slower." Type="Variable" Display="always" Required="false" Mask="false">1.0</Config>
+  <Config Name="PIPER_NOISE" Target="PIPER_NOISE" Default="0.667" Mode="{3}" Description="Controls the variability of the voice by adding noise. Values above 1 will start to degrade audio." Type="Variable" Display="always" Required="false" Mask="false">0.667</Config>
+  <Config Name="PIPER_NOISEW" Target="PIPER_NOISEW" Default="0.333" Mode="{3}" Description="Controls the variability of speaking cadence. Values above 1 produce extreme stutters and pauses." Type="Variable" Display="always" Required="false" Mask="false">0.333</Config>
+  <Config Name="PIPER_SPEAKER" Target="PIPER_SPEAKER" Default="0" Mode="{3}" Description="Speaker number to use if the voice supports multiple speakers." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="PIPER_PROCS" Target="PIPER_PROCS" Default="1" Mode="{3}" Description="Number of Piper processes to run simultaneously." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="GPU-" Mode="" Description="Get this value from settings/User Utilities/Nvidia Driver" Type="Variable" Display="always" Required="true" Mask="false">GPU-</Config>
+  <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/piper" Mode="rw" Description="Local path for piper config files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/piper</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <TailscaleStateDir/>
+</Container>

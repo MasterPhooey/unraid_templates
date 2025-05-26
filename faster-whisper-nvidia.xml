@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Faster-Whisper-Nvidia</Name>
+  <Repository>lscr.io/linuxserver/faster-whisper:gpu</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/faster-whisper</Registry>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-faster-whisper/issues/new/choose</Support>
+  <Project>https://github.com/SYSTRAN/faster-whisper</Project>
+  <Overview>Faster-whisper(https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper. This container is linuxserver image with gpu support.</Overview>
+  <Category>AI: Other:</Category>
+  <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/refs/heads/main/faster-whisper-nvidia.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/MasterPhooey/unraid_icons/refs/heads/main/faster-whisper-nvidia.png</Icon>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <Config Name="WebUI" Target="10300" Default="10300" Mode="tcp" Description="Wyoming connection port." Type="Port" Display="always" Required="true" Mask="false">10300</Config>
+  <Config Name="WHISPER_MODEL" Target="WHISPER_MODEL" Default="tiny-int8|tiny|base-int8|base|small-int8|small|medium-int8" Mode="{3}" Description="Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants" Type="Variable" Display="always" Required="true" Mask="false">small</Config>
+  <Config Name="WHISPER_BEAM" Target="WHISPER_BEAM" Default="1" Mode="{3}" Description="Number of candidates to consider simultaneously during transcription." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="WHISPER_LANG" Target="WHISPER_LANG" Default="en" Mode="{3}" Description="Language that you will speak to the add-on." Type="Variable" Display="always" Required="false" Mask="false">en</Config>
+  <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Get this value from settings/User Utilities/Nvidia Driver" Type="Variable" Display="always" Required="true" Mask="false">GPU-</Config>
+  <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/faster-whisper" Mode="rw" Description="Local path for Whisper config files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/faster-whisper</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <TailscaleStateDir/>
+</Container>

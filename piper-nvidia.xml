@@ -22,7 +22,7 @@
   <Config Name="PIPER_PROCS" Target="PIPER_PROCS" Default="1" Mode="{3}" Description="Number of Piper processes to run simultaneously." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
   <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="GPU-" Mode="" Description="Get this value from settings/User Utilities/Nvidia Driver" Type="Variable" Display="always" Required="true" Mask="false">GPU-</Config>
   <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
-  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/piper" Mode="rw" Description="Local path for piper config files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/piper</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/piper" Mode="rw" Description="Local path for piper config files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/piper</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>

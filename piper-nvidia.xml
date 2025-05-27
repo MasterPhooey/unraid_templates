@@ -2,13 +2,13 @@
 <Container version="2">
   <Name>Piper-Nvidia</Name>
   <Repository>ghcr.io/slackr31337/wyoming-piper-gpu:latest</Repository>
-  <Registry>https://github.com/orgs/linuxserver/packages/container/package/piper</Registry>
+  <Registry>https://github.com/slackr31337/wyoming-piper-gpu/pkgs/container/wyoming-piper-gpu</Registry>
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/linuxserver/docker-piper/issues/new/choose</Support>
-  <Project>https://github.com/rhasspy/piper/</Project>
-  <Overview>Piper(https://github.com/rhasspy/piper/) is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper. This container is linuxserver image with gpu support.</Overview>
+  <Support>https://github.com/slackr31337/wyoming-piper-gpu/issues</Support>
+  <Project>https://github.com/slackr31337/wyoming-piper-gpu</Project>
+  <Overview>Wyoming Piper TTS docker container with Nvidia GPU support for Home-Assistant</Overview>
   <Category>AI: Other:</Category>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/piper.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/MasterPhooey/unraid_icons/refs/heads/main/piper-nvidia.png</Icon>

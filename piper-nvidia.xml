@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Piper-Nvidia</Name>
-  <Repository>ghcr.io/linuxserver/piper:gpu</Repository>
+  <Repository>ghcr.io/slackr31337/wyoming-piper-gpu:latest</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/piper</Registry>
   <Network>bridge</Network>
   <Shell>bash</Shell>

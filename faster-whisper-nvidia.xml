@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/linuxserver/docker-faster-whisper/issues/new/choose</Support>
   <Project>https://github.com/SYSTRAN/faster-whisper</Project>
-  <Overview>Faster-whisper(https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper. This container is linuxserver image with gpu support.</Overview>
+  <Overview>Faster-Whisper docker container with Nvidia GPU support for Home-Assistant</Overview>
   <Category>AI: Other:</Category>
   <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/refs/heads/main/faster-whisper-nvidia.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/MasterPhooey/unraid_icons/refs/heads/main/faster-whisper-nvidia.png</Icon>

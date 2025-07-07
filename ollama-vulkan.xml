@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Ollama-Vulkan</Name>
+  <Repository>grinco/ollama-amd-apu:vulkan</Repository>
+  <Registry>https://hub.docker.com/r/grinco/ollama-amd-apu</Registry>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/ollama/ollama/pull/9650</Support>
+  <Project>https://github.com/grinco/ollama-vulkan/</Project>
+  <Overview>Ollama for use with AMD APU</Overview>
+  <Category>AI: Other:</Category>
+  <WebUI>http://[IP]:[PORT:11434]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/MasterPhooey/unraid_templates/master/ollama-vulkan.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/MasterPhooey/unraid_icons/refs/heads/main/ollamvulkan.png</Icon>
+  <ExtraParams>--device /dev/kfd --device /dev/dri --cap-add CAP_PERFMON</ExtraParams>
+  <Requires>Radeon-TOP Installed</Requires>
+  <Config Name="Config" Target="/root/.ollama" Default="/mnt/user/appdata/ollama" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ollama</Config>
+  <Config Name="Web Interface" Target="11434" Default="11434" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11434</Config>
+  <Config Name="OLLAMA_ORIGINS" Target="OLLAMA_ORIGINS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">*</Config>
+  <Config Name="OLLAMA_KEEP_ALIVE" Target="OLLAMA_KEEP_ALIVE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">-1</Config>
+  <Config Name="OLLAMA_CONTEXT_LENGTH" Target="OLLAMA_CONTEXT_LENGTH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">10000</Config>
+  <Config Name="OLLAMA_FLASH_ATTENTION" Target="OLLAMA_FLASH_ATTENTION" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="OLLAMA_MAX_LOADED_MODELS" Target="OLLAMA_MAX_LOADED_MODELS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="OLLAMA_KV_CACHE_TYPE" Target="OLLAMA_KV_CACHE_TYPE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">q8_0</Config>
+</Container>
